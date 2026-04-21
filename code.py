@@ -26,6 +26,10 @@ from tensorflow.keras.utils import to_categorical
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Suppress TensorFlow INFO and WARNING logs
 import tensorflow as tf
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03bf14c10d72c73e9492bfd509649a444ab130ac
 df = pd.read_csv('/kaggle/input/dataset-for-predicting-watering-the-plants/TARP.csv')
 df.columns = df.columns.str.strip()
 df.dropna(inplace=True)
@@ -88,6 +92,10 @@ plt.legend(loc='lower right')
 plt.grid()
 plt.show()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03bf14c10d72c73e9492bfd509649a444ab130ac
 param_grid_rf = {'n_estimators': [100, 200], 'max_depth': [10, 20], 'min_samples_split': [2, 5]}
 grid_rf = GridSearchCV(RandomForestClassifier(), param_grid_rf, cv=5, scoring='accuracy')
 grid_rf.fit(X_train, y_train)
@@ -148,6 +156,7 @@ plot_history(history3, "Training and Validation Accuracy/Loss (2 Epochs, Batch S
 
 history4 = build_and_train_model(epochs=5, batch_size=16)
 plot_history(history4, "Training and Validation Accuracy/Loss (5 Epochs, Batch Size 16)")
+print("This is my code")
 from sklearn.metrics import roc_curve, auc
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
