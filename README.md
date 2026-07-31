@@ -1,3 +1,4 @@
+
 # 🌱 AI-Powered Gardening System
 
 The **AI-Powered Gardening System** is a Machine Learning-based software project that predicts whether a plant requires watering based on environmental conditions. The project uses a publicly available Kaggle dataset containing features such as **soil moisture, temperature, humidity, air temperature, wind speed, air humidity, pressure, and time**.
